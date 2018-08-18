@@ -1,0 +1,429 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,700i');
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/gotham/Gotham-Light.woff2') format('woff2'),
+			url('../fonts/gotham/Gotham-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/gotham/Gotham-Black.woff2') format('woff2'),
+			url('../fonts/gotham/Gotham-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Book';
+	src: url('../fonts/gotham/Gotham-Book.woff2') format('woff2'),
+			url('../fonts/gotham/Gotham-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica LT Std';
+	src: url('../fonts/helvetica/HelveticaLTStd-Light.woff2') format('woff2'),
+			url('../fonts/helvetica/HelveticaLTStd-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* Variables */
+
+
+:root {
+		--color_dorado: rgb(151, 136, 92);
+		--color_azul: rgb(0, 68, 121);
+		--color_rojo: rgb(148, 21, 27);
+		--color_gris-oscuro: rgb(73, 73, 73);
+		--color_gris-claro: rgb(216, 217, 221);
+		--font_merriweather: 'Merriweather', serif;
+		--font_gotham: 'Gotham';
+		--font_gotham-book: 'Gotham Book';
+		--font_helvetica-LT: 'Helvetica LT Std';
+}
+
+/* Estilos para header */
+
+header {
+	border-bottom: 1px solid var(--color_dorado);
+}
+
+header > img {
+	width: 10%;
+	display: block;
+	margin: auto;
+	padding: 10px 0px;
+}
+
+/* Estilos para main-section */
+
+.main-section {
+	background-image: url(../img/imagenAula.png);
+	background-repeat: no-repeat;
+	padding: 80px;
+}
+
+.col-md-8 > .title-left {
+	color: var(--color_dorado);
+	font-family: var(--font_merriweather);
+	font-style: oblique;
+	font-size: 2rem;
+	padding: 25px 0 0 5px;
+}
+
+.col-md-8 > .title-right {
+	color: var(--color_dorado);
+	font-family: var(--font_merriweather);
+	font-style: oblique;
+	font-size: 2rem;
+	padding: 0 180px;
+}
+
+.col-md-8 > .title {
+	color: var(--color_dorado);
+	font-family: var(--font_gotham);
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 6rem;
+	letter-spacing: 0.7rem;
+	margin-top: 0px;
+	line-height: 4rem;
+}
+
+.col-md-8 > .paragraph_1 {
+	color: var(--color_gris-oscuro);
+	font-family: var(--font_gotham-book);
+	font-style: oblique;
+	font-size: 1.5rem;
+	padding: 35px 0;
+}
+
+.col-md-8 > .date > p {
+	display: inline-block;
+	padding: 40px 50px 0 0;
+	color: var(--color_gris-oscuro);
+	font-family: var(--font_helvetica-LT);
+	font-style: oblique;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.col-md-8 span {
+	color: var(--color_rojo);
+}
+
+.col-md-8 > .logoMBA {
+	width: 35%;
+	padding: 40px 0px;
+}
+
+.col-md-8 > .subtitle_1 {
+	font-family: var(--font_merriweather);
+	font-style: oblique;
+	color: var(--color_rojo);
+}
+
+.col-md-8 > .paragraph_2 {
+	font-family: var(--font_gotham-book);
+	color: var(--color_gris-oscuro);
+	line-height: 3.5rem;
+	font-size: 1.5rem;
+}
+
+.col-md-4 > .form {
+	margin-top: 90px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 30px;
+	box-shadow: 0px 0px 5px lightgrey;
+}
+
+.col-md-4 > .form > p {
+	font-family: var(--font_gotham);
+	font-weight: 300;
+	color: var(--color_azul);
+	font-size: 1.2rem;
+}
+
+.col-md-4 > .form > input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid var(--color_gris-oscuro);
+	padding: 5px 0px;
+	margin: 0px 0px 25px 0;
+	background-color: rgba(255, 255 , 255,0);
+}
+
+.col-md-4 > .form > input:focus {
+	outline: none;
+}
+
+.col-md-4 > .form > .profile {
+	width: 47%;
+	margin: 0 6% 25px 0;
+}
+
+label {
+	font-family: var(--font_gotham);
+	font-weight: 300;
+	color: var(--color_gris-oscuro);
+	font-size: 1rem;
+	position: relative;
+}
+
+.btn-submit {
+	background-color: var(--color_azul);
+	width: 100%;
+	padding: 10px;
+	margin-top: 30px;
+	border: none;
+	color: white;
+	font-family: var(--font_gotham);
+	font-weight: 900;
+}
+
+.col-md-4 > .form > .work {
+	width: 47%;
+	margin: 0 0 20px 0;
+	float: right;
+}
+
+::placeholder {
+	color: var(--color_gris-oscuro);
+	font-family: var(--font_gotham-book);
+}
+
+/* Estilos para Características */
+
+.caracteristicas {
+	background-image: url(../img/AulaHarvard2.png);
+	background-repeat: no-repeat;
+	padding: 20px 0;
+}
+
+.col-md-8 > .title-character {
+	color: white;
+	font-family: var(--font_merriweather);
+	font-style: oblique;
+	font-size: 2.5rem;
+	padding: 20px 0;
+}
+
+.col-md-6 > .text-character {
+	color: white;
+	font-family: var(--font_gotham-book);
+}
+
+/* Estilos para Invitados */
+
+.invitados {
+	padding-top: 50px;
+}
+
+/*Estilos para slider */
+
+.slider-guest {
+	padding: 30px 0px;;
+}
+
+.carousel-control {
+	width:  4%;
+}
+
+.carousel-control.left {
+	margin-left: -60px;
+	background-image: none;
+	color: black;
+	font-size: 4rem;
+	line-height: 18rem;
+	text-shadow: 0px 0px white;
+}
+
+.carousel-control.right {
+	margin-right: -60px;
+	background-image: none;
+	color: black;
+	font-size: 4rem;
+	line-height: 18rem;
+	text-shadow: 0px 0px white;
+}
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+
+.name-guest {
+	font-family: var(--font_gotham);
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	padding: 8px 0px 0px 5px;
+}
+
+.job-guest, .company {
+	font-family: var(--font_gotham-book);
+	font-weight: bold;
+	text-align: center;
+	color: var(--color_dorado);
+	line-height: 0.4rem;
+	font-size: 1.1rem;
+	font-style: oblique;
+}
+
+.text-guest {
+	font-family: var(--font_merriweather);
+	font-style: oblique;
+	font-weight: 400;
+	font-size: 2.5rem;
+	padding: 40px 0px;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+/* Estilos para Mosaicos */
+
+.container-mosaic {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column_1 {
+	-ms-flex: 10%; /* IE10 */
+	flex: 10%;
+	max-width: 10%;
+	padding: 0 4px;
+}
+
+.column_2 {
+	-ms-flex: 20%; /* IE10 */
+	flex: 20%;
+	max-width: 20%;
+	padding: 0 4px;
+}
+
+.column_1 img {
+	width: 100%;
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+.column_2 img {
+	width: 100%;
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+/*Estilos para el footer */
+
+.footer {
+	background-color: var(--color_gris-claro);
+	padding: 20px 0px;
+}
+
+.text-footer {
+	font-family: var(--font_gotham);
+	font-weight: 900;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+	.carousel-inner .active.left {
+		left: -100%;
+	}
+
+	.carousel-inner .next {
+		left:  100%;
+	}
+	.carousel-inner .prev {
+		left: -100%;
+	}
+
+	.active > div {
+		display:none;
+	}
+
+	.active > div:first-child {
+		display:block;
+	}
+
+	.col-md-8 > .date > p {
+		padding: 20px 0 0 0;
+		color: var(--color_gris-oscuro);
+		font-family: var(--font_helvetica-LT);
+		font-style: oblique;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+	}
+
+	header > img {
+		width: 20%;
+		display: block;
+		margin: auto;
+		padding: 10px 0px;
+	}
+
+	.container-mosaic {
+		display: none;
+	}
+
+	.text-footer {
+		font-size: 1rem;
+	}
+
+	.col-md-8 > .logoMBA {
+		width: 55%;
+		padding: 40px 0px;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 992px ) {
+	.carousel-inner .active.left {
+		left: -50%;
+	}
+	
+	.carousel-inner .next {
+		left: 50%;
+	}
+	
+	.carousel-inner .prev {
+		left: -50%;
+	}
+	
+	.active > div {
+		display:none;
+	}
+
+	.active > div:first-child {
+		display:block;
+	}
+	
+	.active > div:first-child + div {
+		display:block;
+	}
+}
+@media (min-width: 992px ) {
+	.carousel-inner .active.left { 
+		left: -25%;
+	}
+	
+	.carousel-inner .next { 
+		left:  25%;
+	}
+	.carousel-inner .prev { 
+		left: -25%;
+	}	
+}
+
+
